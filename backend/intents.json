@@ -1,0 +1,521 @@
+{
+  "intents": [
+    {
+      "tag": "sveiciens",
+      "patterns": ["Sveiks", "Sveiki", "Labdien", "Labdien!", "Čau", "Čau!"],
+      "responses": [
+        "Sveiks/a!",
+        "Prieks Tevi redzēt!",
+        "Labdien, kā varu palīdzēt?"
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "atvadisanas",
+      "patterns": [
+        "Atā",
+        "Līdz vēlākam!",
+        "Uz redzēšanos!",
+        "Es tagad iešu",
+        "Es pazūdu",
+        "Jauku dienu!",
+        "Visu labu"
+      ],
+      "responses": [
+        "Atā!",
+        "Uz redzēšanos.",
+        "Lai Tev jauka diena!",
+        "Gaidīšu atpakaļ!"
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "pateiciens",
+      "patterns": ["Liels paldies", "Paldies"],
+      "responses": [
+        "Prieks palīdzēt!",
+        "Nav par ko!",
+        "Ja vēl kādi jautājumi, droši prasiet!"
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "vards",
+      "patterns": ["Kā tevi sauc?", "Kāds ir tavs vārds?"],
+      "responses": ["Mans vārds ir Ortusa", "Mani sauc Ortusa!"],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Uzdevumi",
+      "patterns": [
+        "DAAP - Kādi ir pārbaudījumi kursā?",
+        "DAAP - No kā sastāv gala atzīme?"
+      ],
+      "responses": [
+        "Kurss sastāv no praktiskajiem darbiem (4 balles, 40% no gala vērtējuma), Starpeksāmens (1 balle, 10% no gala vērtējuma), Eksāmens (3 balles, 20% no gala vērtējuma), Kursa darbs (2 balles, 20% no gala vērtējuma) kā arī ir iespēja iegūt papildus 0.5 punktus, atbildot uz īsiem digitāliem testiem lekcijas laikā."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Obligatie uzdevumi",
+      "patterns": [
+        "DAAP - Kādi pārbaudījumi ir obligāti?",
+        "daap - kadi parbaudijumi ir obligati?",
+        "DAAP - Kuri pārbaudījumi ir obligāti?",
+        "daap - kuri parbaudijumi ir obligati?"
+      ],
+      "responses": [
+        "Tikai praktiskie darbi. Tie jānodod semestra laikā. Pēc semestra beigām praktiskie darbi/kursa darbi vairs netiek pieņemti."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Eksamens",
+      "patterns": [
+        "DAAP - Vai eksāmeni ir obligāti?",
+        "daap - vai eksameni ir obligati?",
+        "DAAP - Eksāmens vai Kursa darbs ir obligāts?",
+        "daap - eksamens vai kursa darbs ir obligats?",
+        "DAAP - Kursa darbs ir obligāts?"
+      ],
+      "responses": [
+        "Nē, obligāti jānodod tikai visi praktiskie darbi, vismaz uz vienu punktu katrs."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Praktiskie uzdevumi",
+      "patterns": [
+        "DAAP - Vai praktiskie ir obligāti?",
+        "daap - vai praktiskie ir obligati?",
+        "DAAP - Vai visi praktiskie ir jānodod?"
+      ],
+      "responses": [
+        "Jā, obligāti jānodod visi praktiskie darbi, vismaz uz vienu punktu katrs."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Termins",
+      "patterns": [
+        "DAAP - Kāds ir termiņš nodošanai?",
+        "daap - kads ir termins nodosanai?",
+        "DAAP - Cik ilgā laikā ir jānodod?",
+        "daap - cik ilga laika ir janodod?"
+      ],
+      "responses": [
+        "Praktiskā darba nodošanas termiņš ir divas nedēļas pēc praktiskās nodarbības, kurā saņēmāt darba uzdevumu. Visi praktiskie darbi jānodod semestra laikā."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Eksamena rakstisana",
+      "patterns": [
+        "DAAP - Vai es drīkstu rakstīt eksāmenu ja nav visi darbi?",
+        "daap - vai es drikstu rakstit eksamenu ja nav visi darbi?",
+        "DAAP - Vai es drīkstu rakstīt eksāmenu ja nav praktiskie",
+        "daap - vai es varu rakstit eksamenu ja nav praktiskie darbi"
+      ],
+      "responses": [
+        "Jā, bet atzīmi priekšmetā Jūs nesaņemsiet, kamēr netiks nodoti un ieskaitīti visi praktiskie darbi, vismaz uz 1 punktu katrs."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Praktisko darbu sutisana",
+      "patterns": [
+        "DAAP - Vai es drīkstu iesniegt praktisko darbu atkārtoti, lai uzlabotu atzīmi?",
+        "daap - vai es drikstu iesniegt praktisko darbu atkartoti, lai uzlabotu atzimi?",
+        "DAAP - Cik reizes es drīkstu iesniegt darbu?",
+        "daap - cik reizes es drikstu iesniegt darbu?"
+      ],
+      "responses": [
+        "Praktisko darbus drīkst iesniegt tikai trīs reizes. Darbi tiek vērtēti atbilstoši vērtēšanas rubrikai."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Praktisko darbu labosana",
+      "patterns": [
+        "DAAP - Cik reizes es drīkstu labot praktisko darbu?",
+        "daap - Cik reizes var labot praktiskos?"
+      ],
+      "responses": [
+        "UZMANĪBU! Darbu drīkst iesūtīt tikai trīs reizes. Ja trijās reizēs nesanāca iegūt minimālu 1 punktu, lai ieskaitītu darbu, tad kurss būs jāatkārto no jauna. Neaizmirstiet, ka pasniedzēji ar prieku konsultēs Jūs, ja vien ir nepieciešama palīdzība darba nodošanā un Jūs kaut ko neizprotat."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Nav visi darbi nosutiti",
+      "patterns": [
+        "DAAP - Kas notiek ja nav nodoti visi darbi semestra laikā?",
+        "daap - kas notiek ja nav nodoti visi darbi semestra laika?",
+        "DAAP - Kas notiek ja nav visi darbi?"
+      ],
+      "responses": [
+        "Tiek uzskatīts, ka kurss netika apgūts, jo students nav strādājis semestra laikā. Šajā gadījumā kurss jāatkārto no jauna."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Starpeksameni",
+      "patterns": [
+        "DAAP - Vai starpeksāmenu drīkst pārrakstīt?",
+        "daap - vai starpeksamenu drikst parrakstit?",
+        "DAAP - Vai var izlabot starpeksāmenu?",
+        "DAAP - Vai var izlabot starpeksāmena atzīmi?"
+      ],
+      "responses": [
+        "Nē, starpeksāmens tiek kārtots tikai vienu reizi, atkārtota kārtošana nav iespējama."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Starpeksamenu diena",
+      "patterns": [
+        "DAAP - Vai starpeksāmenu var rakstīt citā dienā?",
+        "daap - vai starpeksamenu drikst rakstit cita diena?",
+        "DAAP - Es nevaru apmeklēt starpeksāmenu, vai to var rakstīt citā dienā?",
+        "DAAP - es nevaru apmeklet starpeksamenu, vai to var rakstit cita diena?"
+      ],
+      "responses": [
+        "Nē, lai minimizētu plaģiāta/negodīgās rīcības varbūtību, starpeksāmens ir pieejams visam kursam noteiktajā laikā un tikai vienu reizi."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Starpeksamena problemas",
+      "patterns": [
+        "DAAP - Ko darīt, ja netieku uz starpeksāmenu, kā var iegūt papildus punktus?",
+        "daap - ko darit ja netieku uz starpeksamenu, ka var iedut papildus punktus?",
+        "DAAP - Ko darīt ja es netieku uz starpeksāmenu?",
+        "DAAP - ko darit ja netieku uz starpeksamenu?"
+      ],
+      "responses": [
+        "Starpeksāmens nav obligāts pārbaudījums. Punktus var sakrāt citos pārbaudījumos, kā arī, kursa gaitā var dabūt papildus 0.5 punktus par īsu testu kārtošanu lekciju laikā."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Eksamena parrakstisana",
+      "patterns": [
+        "DAAP - Vai drīkstu pārrakstīt eksāmenu?",
+        "daap - Vai eksamenu var parrakstit?",
+        "DAAP - Vai eksāmenu drīkst pārrakstīt?"
+      ],
+      "responses": [
+        "Jā! Rudens semestra laikā būs vismaz 2 iespējas nokārtot eksāmenu. Kā arī, eksāmens ir vienīgais pārbaudījums, ko drīkst kārtot ārpus semestra laika. Arī pavasara semestrī būs iespēja kārtot eksāmenu (tiks nodrošinātas vismaz trīs iespējas rakstīt eksāmenu)."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Kursa tema",
+      "patterns": [
+        "DAAP - Kad var izvēlēties kursa darba tēmu?",
+        "daap - kad var izveleties kursa darba temu?",
+        "DAAP - No kura datuma var izvēlēties kursa darba tēmu?"
+      ],
+      "responses": [
+        "Referātu tēmu saraksts būs pieejams no 4. nedēļas. Taču izvēlēties konkrēto tēmu nav iespējams. Līdz 6. nedēļai studentiem jāpiesakās uz referāta uzdevuma pildīšanu un tad katram studentam nejaušā veidā tiks piešķirta viena no tēmām."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Kursa tema izvele",
+      "patterns": [
+        "DAAP - Vai drīkst mainīt kursa darba tēmu?",
+        "daap - Vai ir iespēja mainīt kursa darba tēmu?"
+      ],
+      "responses": ["Nē. Katram studentam tēma tiek piešķirta nejaušā veidā."],
+      "context_text": ""
+    },
+    {
+      "tag": "DAAP - Paradnieks",
+      "patterns": [
+        "DAAP - Esmu parādnieks kursā, ko varu darīt, lai kursu nokārtotu?",
+        "daap - ko darit ja esmu paradnieks?",
+        "DAAP - Ko darīt, ja man nav nodoti visi darbi?"
+      ],
+      "responses": [
+        "Ja semestra laikā nav ieskaitīti visi praktiskie darbi, tad kursu nokārtot nav iespējams. Kurss jāatkārto no jauna nākamgad. Ja praktiskie darbi ir nokārtoti vismaz uz vienu punktu katrs, tad variet pierakstīties uz eksāmenu (3 punktus vērts), lai iegūtu minimālo pozitīvo vērtējumu. Ja kursa gaitā semestrī sakrājāt papildus punktus starpeksāmenā/kursa darbā/utt., tad visi šie papildus punkti tiks ņemti vērā kopējā atzīmē. "
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - kursa vertejums",
+      "patterns": [
+        "3D - No kā sastāv kursa vērtējums?",
+        "3D - Kā dabūt kursa vērtējumu?",
+        "3D - Kā nokārtot kursu?",
+        "3D - ka nokartot kursu?"
+      ],
+      "responses": [
+        "Kursa vērtējums sastāv no praktiskiem darbiem, kas ir nodoti semestra laikā."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - praktisko darbu skaits",
+      "patterns": [
+        "3D - Kāds ir kopējais praktisko darbu skaits?",
+        "3D - Cik uzdevumi ir kursa laikā?",
+        "3D - Cik kopā ir praktiskie darbi?"
+      ],
+      "responses": [
+        "Kopējais praktisko darbu skaits ir 13. To skaits var mainīties atkarībā no kalendāra plāna."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - automatiska atzime",
+      "patterns": [
+        "3D - Vai šajā kursā var dabūt automātisko vērtējumu (automātu)?",
+        "3D - Vai var dabūt automātu?",
+        "3D - vai ir iespējams automāiskais vērtējums?"
+      ],
+      "responses": ["Šī kursa ietvaros automātiskā atzīme nav paredzēta"],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - darba nodosana",
+      "patterns": [
+        "3D - Vai es varēšu augšupielādēt savus praktiskus darbus pēc noteikta termiņa?",
+        "3D - Vai es varu augšupielādēt darbus jebkurā laikā?",
+        "3D - Vai es varu nodot darbus pēc semestra?"
+      ],
+      "responses": ["Nē, tas nav iespējams. Šīs kurss būs jāapgūst atkārtoti."],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - darba nodosana v2",
+      "patterns": [
+        "3D - Vai ir iespējams augšupielādēt praktisko darbu, ja esmu nokavējis vienu nedēļu, bet vel nav semestra beigas? Pārējie darbi man ir nodoti laicīgi.?",
+        "3D - Vai var nodot darbus vēlāk?"
+      ],
+      "responses": [
+        "Jā, darbu ir iespējams augšupielādēt arī vēlāk. Vēlākais ir pirms semestra beigām."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - darba nodosana v3",
+      "patterns": [
+        "3D - Vai es varētu atsūtīt visus savus praktiskos darbus uz jūsu e-pastu?",
+        "3D - Vai var sūtīt darbus uz jūsu epastu?"
+      ],
+      "responses": [
+        "Neviens darbs, kas tiks iesūtīts uz e-pastu nebūs novērtēts. Visus darbus var augšupielādēt tikai Ortus vidē."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - darba programatura",
+      "patterns": [
+        "3D - Vai drīkst izmantot citu programmatūru?",
+        "3D - Vai drīkst lietot citu programmatūru?",
+        "3D - Vai darba izpildei var izmantot citu programmatūru?"
+      ],
+      "responses": [
+        "Nē, tas nav iespējams. Šī kursa ietvaros tiek apgūta “Blender” programmatūra."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - problemas darba",
+      "patterns": [
+        "3D - Man nestrādā",
+        "3D - Man nestrādā noteikta opcija",
+        "3D - Es nevaru izpildīt savu darbu.",
+        "3D - Palīdziet lūdzu"
+      ],
+      "responses": [
+        "Lūdzu atsūtiet ekrānuzņēmumu ar kļūdu un informāciju, ko piedāvā Blender programmatūra, kā arī pievienojiet arhīvu ar jūsu .blend failu un tekstūram, ja tādas ir scēnā."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "3D - parsniegts limits",
+      "patterns": [
+        "3D - Ko darīt, ja augšupielādējamais fails pārsniedz limitu, kas ir dots Ortusā?",
+        "3D - Mans darbs ir pārāk liels",
+        "3D - Es nevaru lejupielādēt darbu"
+      ],
+      "responses": [
+        "Nepieciešams augšupielādēt failu kādā mākonī un tad ievietot Ortusā atsauci uz šo failu."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DATDIZ - kursa vertejums",
+      "patterns": [
+        "DATDIZ - No kā sastāv kursa vērtējums?",
+        "DATDIZ - Kā dabūt kursa vērtējumu?",
+        "DATDIZ - Kā nokārtot kursu?",
+        "DATDIZ - ka nokartot kursu?"
+      ],
+      "responses": [
+        "Kursa vērtējums sastāv no praktiskiem darbiem, kas ir nodoti semestra laikā."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DATDIZ - lekciju apmeklejums",
+      "patterns": [
+        "DATDIZ - Vai man obligāti ir nepieciešams apmeklēt lekcijas?",
+        "DATDIZ - Vai uz lekcijām ir jāiet?",
+        "DATDIZ - Lekcijas obligātas?"
+      ],
+      "responses": ["Lekciju apmeklējums nav obligāts."],
+      "context_text": ""
+    },
+    {
+      "tag": "DATDIZ - darbs grupas",
+      "patterns": [
+        "DATDIZ - Vai šajā kursā ir paredzēts darbs grupās vai individuāli uzdevumi?",
+        "DATDIZ - Vai darbi ir grupās vai individuāli?",
+        "DATDIZ - Vai darbi ir individuāli?",
+        "DATDIZ - Vai darbi ir grupās?"
+      ],
+      "responses": [
+        "Atkarībā no uzdevuma, šis kurss paredz gan individuālus uzdevumus, gan darbu grupā."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DATDIZ - kursa programmaturas",
+      "patterns": [
+        "DATDIZ - Kādu programmatūru ir plānots pielietot šajā kursā?",
+        "DATDIZ - Kādas lietotnes tiks izmantotas?",
+        "DATDIZ - Kādas aplikācijas tiks izmantotas?"
+      ],
+      "responses": [
+        "Šī kursa ietvaros darbi tiek veidoti, pielietojot Gimp, Inkscape, Figma, Quest AI un canvas.com, Blender."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DATDIZ - citas programmaturas",
+      "patterns": [
+        "DATDIZ - Vai es varētu izmantot kādu citu programmatūru praktisko uzdevuma izpildei?",
+        "DATDIZ - Var izmantotas citas lietotnes?",
+        "DATDIZ - Var izmantot citas aplikācijas?",
+        "DATDIZ - Vai var izmantot kādu citu programmu?"
+      ],
+      "responses": [
+        "Tas ir atkarīgs no uzdevuma, bet jā, var izmantot arī citu programmatūru."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "DATDIZ - automatiska atzime",
+      "patterns": [
+        "DATDIZ - Vai šajā kursā var dabūt automātisko vērtējumu (automātu)?",
+        "DATDIZ - Vai var dabūt automātu?",
+        "DATDIZ - vai ir iespējams automāiskais vērtējums?"
+      ],
+      "responses": ["Šī kursa ietvaros automātiskā atzīme nav paredzēta"],
+      "context_text": ""
+    },
+    {
+      "tag": "DATDIZ - darba nodosana v3",
+      "patterns": [
+        "DATDIZ - Vai es varētu atsūtīt visus savus praktiskos darbus uz jūsu e-pastu?",
+        "DATDIZ - Vai var sūtīt darbus uz jūsu epastu?"
+      ],
+      "responses": [
+        "Neviens darbs, kas tiks iesūtīts uz e-pastu nebūs novērtēts. Visus darbus var augšupielādēt tikai Ortus vidē."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - kursa vertejums",
+      "patterns": [
+        "GRAF - No kā sastāv kursa vērtējums?",
+        "GRAF - Kā dabūt gala atzīmi?"
+      ],
+      "responses": [
+        "Kursa vērtējums sastāv no 3. daļām, kas iekļauj sevī praktiskus darbus, starpeksāmenu un eksāmenu."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - kursa eksameni",
+      "patterns": [
+        "GRAF - Vai man ir nepieciešams rakstīt 2. eksāmenu, ja gala vērtējums ir lielāks par 4 ballēm?",
+        "GRAF - Vai vajag rakstīt eksāmenu ja atzīme ir sekmīga?"
+      ],
+      "responses": [
+        "Nē, eksāmenu nav nepieciešams rakstīt, ja jūs apmierina tekošā atzīme."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - kursa eksameni v2",
+      "patterns": [
+        "GRAF - Vai man ir nepieciešams rakstīt eksāmenus, ja par praktiskiem darbiem ir iegūts vidējais vērtējums 4 balles?",
+        " GRAF - Vai vajag rakstīt eksāmenu ja vidējā atzīme ir 4?"
+      ],
+      "responses": [
+        "Nē, eksāmenu nav nepieciešams rakstīt, ja jūs apmierina tekošā atzīme."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - vertejumi",
+      "patterns": [
+        "GRAF - Kur es varu paskatīties savu gala vērtējumu?",
+        "GRAF - Kur var redzēt savas atzimes?"
+      ],
+      "responses": [
+        "Gala vērtējumu par kursu var apskatīt sadaļā “Vērtējumi”."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - darba atzimes",
+      "patterns": [
+        "GRAF - Vai praktiskais darbs skaitās nodots, ja tas ir novērtēts uz 0?",
+        "GRAF - Kad darbs skaitās nodots?"
+      ],
+      "responses": [
+        "Darbs skaitās nodots, ja tas ir novērtēts vismaz uz 1 balli."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - atzimes labosana",
+      "patterns": [
+        "GRAF - Vai es varu labot sava praktiskā darba vērtējumu, ja tas mani neapmierina?",
+        "GRAF - Vai var izlabot atzīmes?",
+        "GRAF - Vai var labot atzīmi?",
+        "GRAF - Vai var mainīt vērtējumu?"
+      ],
+      "responses": [
+        "To ir iespējams labot tikai, ja ir pieļautas nopietnas kļūdas vai darbs tika novērtēts uz 1 balli vai mazāk. Maksimālu vērtējumu iegūt vairs nav iespējams par labotu darbu."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - eksamena rakstisana",
+      "patterns": [
+        "GRAF - Vai es varu rakstīt eksāmenu, ja man nav nodoti visi praktiskie darbi?",
+        "GRAF - Vai var rakstit eksamenu ja nav nodoti visi darbi?"
+      ],
+      "responses": [
+        "Jā, var rakstīt eksāmenu, bet darbus ir jānodod līdz noteiktajām datumam."
+      ],
+      "context_text": ""
+    },
+    {
+      "tag": "GRAF - praktiska darba nodosana",
+      "patterns": [
+        "GRAF - vai jānodod visi praktiski darbi?",
+        "GRAF - Vai jānodod visi darbi ja vidējā atzīme ir virs 4?"
+      ],
+      "responses": [
+        "Visus praktiskus darbus ir jānodod obligāti, lai sekmīgi pabeigtu šo kursu."
+      ],
+      "context_text": ""
+    }
+  ]
+}
